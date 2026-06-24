@@ -1,0 +1,38 @@
+# ---- 敏感文件（务必忽略，含登录态/凭证）----
+cas_session.pkl        # 持久化的 cookie，内含 CASTGC(TGT)，等价于登录态
+*.pkl
+.env
+secrets.*
+config.local.*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- 测试 / 覆盖率 ----
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ---- IDE / 编辑器 ----
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db
